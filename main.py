@@ -136,4 +136,4 @@ async def whitelisted(ctx):
 async def info(ctx):
     await ctx.send(embed=discord.Embed(title="Elixir Info", description=f"{len(client.guilds)} servers, {len(client.users)} users | Database is {'connected' if db.find_one({ 'guild_id': ctx.guild.id })['users'] else 'disconnected'}."))
 
-client.run(os.environ["NzQwMjMzNzYwOTI2MzM0OTc2.XymCaQ.NU8P6ikN2kDWvQ54l6niV1QcsV0"])
+client.run(os.environ["token"])
